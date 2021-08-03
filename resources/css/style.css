@@ -1,0 +1,404 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+html,body{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/* ------ Reusable Components ------*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section-features{
+    padding: 80px 0;
+    margin-bottom: 30px;
+}
+
+.section-courses{
+    padding: 80px 0;
+    background-color: aliceblue;
+}
+
+.section-testimonials{
+    padding: 80px 0;
+}
+
+.section-plans{
+    padding: 80px 0;
+}
+
+.section-form{
+    padding: 80px 0;
+}
+
+.course-features{
+    margin-bottom: 15px;
+}
+
+.box, .box1{
+    padding: 1%;
+}
+
+.box1{
+    padding: 1%;
+}
+
+/* ------ HEADINGS ------*/
+
+h1{
+    margin-top: 0;
+    color: #fff;
+    font-size: 200%;
+    font-weight:500;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: #000;
+    font-size: 180%;
+    text-align: center;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h3{
+   font-size: 110%;
+   margin-bottom: 15px; 
+   text-transform: uppercase;
+}
+
+h4{
+    color: #000;
+    font-size: 100%;
+    margin-bottom: 20px; 
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2::after{
+    display: block;
+    height: 3px;
+    background-color: darkblue;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* ------ PARAGRAPHS ------*/
+
+.box p{
+   font-size: 100%;
+   line-height: 145%;
+   text-align: justify;
+}
+
+/* ------ICONS ------ */
+
+.icon-big{
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.icon-smaller{
+    display: inline-block;
+    width: 25px;
+    color: #e67e22;
+    text-align: center;
+    font-size: 120%;
+
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* ------ HEADER ------ */
+
+header{
+    background-image: linear-gradient(rgba(4, 21, 252, 0.9), rgba(240, 237, 237, 0.1)), url(images/hero1.jpg);
+    height: 100vh;  
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.login{
+    margin-right: 80px;
+}
+
+.main-nav li a:link, .main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 100%;
+    transition: color 0.5s;
+}
+
+.main-nav li a:hover, .main-nav li a:active{
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn:link, .btn:visited, 
+input[type=submit]:link, input[type=submit]:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    color: darkblue;
+    display: inline-block;
+    margin-left: 42%;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.btn:hover, .btn:active, 
+input[type=submit]:hover, input[type=submit]:active{
+    background-color: darkblue;
+    color: #fff;
+}
+
+.btn-full:link, .btn-full:visited, 
+input[type=submit]:link, input[type=submit]:visited{
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-full:hover, .btn-full:active, 
+input[type=submit]:hover, input[type=submit]:active{
+    background-color: darkblue;
+    border: 1px solid darkblue;
+    color: #fff;
+}
+
+.btn1:link, .btn1:visited{
+    display: inline-block;
+    padding: 5px 20px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 50px;
+    color: #fff;
+    display: inline;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.btn1:hover, .btn1:active{
+    background-color: darkblue;
+    color: #fff;
+}
+
+.btn-full-1:link, .btn-full-1:visited{
+    background-color: rgb(248, 150, 4);
+    border: 1px solid rgb(248, 150, 4);
+}
+
+.btn-full-1:hover, .btn-full-1:active{
+    background-color: darkblue;
+    border: 1px solid darkblue;
+    color: #fff;
+}
+
+/* ------ Courses ------*/
+
+.box1 img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* ------ Testimonials ------ */
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+cite img{
+    width: 50%;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+cite{
+    font-size: 100%;
+    font-weight: bold;
+    margin-top: 25px;
+    display: block;
+    color: #000;
+}
+
+blockquote::before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+}
+
+/* ------ SIGN UP ------ */
+
+.section-plans{
+    background-color: #f4f4f4;
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+}
+
+.plan-price{
+    color: #e67e22;
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+/* ------ Form ------ */
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=email], input, select, textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+/* ----- FOOTER ----- */
+
+footer{
+    padding: 50px 0;
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    text-align: center;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links i{
+    color: #fff;
+}
+
+
+
